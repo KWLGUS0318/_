@@ -47,11 +47,11 @@
 }
 
 .about-window {
-  width: 30vw;
+  width: 43vw;
   height: 30vw;
   position: inherit;
-  bottom: -4px;
-  left: 3vw;
+  bottom: -6px;
+  left: 0vw;
 }
 
 
@@ -82,9 +82,10 @@
 }
 
 .text>h1 {
-  margin-top: 2vw;
-  text-align: center;
+  margin-top: 3vw;
   transform: rotateY(-180deg);
+  position: inherit;
+  right: 5vw;
 }
 
 .web-collect {
@@ -116,10 +117,10 @@
 }
 
 .por-img {
-  width: 160px;
-  height: 110px;
+  width: 5vw;
+  height: 10vh;
   position: relative;
-  left: 15vw;
+  left: 23vw;
   transform: rotateY(-180deg);
 }
 
@@ -147,15 +148,15 @@
   height: 5vw;
   transform: rotateY(180deg);
   position: relative;
-  top: 2vw;
+  top: 2vw; right: 300px;
 }
 
 .design-door {
-  width: 15vw;
+  width: 10vw;
   height: 25vw;
-  position: relative;
-  left: 7vw;
-  bottom: -0.4vw;
+  position: inherit;
+  left: 3vw;
+  bottom: 0vw;
   transform: rotateY(180deg);
 
 }
