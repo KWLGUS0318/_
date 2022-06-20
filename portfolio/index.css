@@ -25,12 +25,12 @@
   height: 400px;
   position: relative;
   top: 0px;
-  left: 250px;
+  left: 200px;
 }
 
 /* 이름 이미지*/
 .name-tag {
-  width: 600px;
+  width: 550px;
   height: 150px;
   border-radius: 30px;
   background-color: #fff;
@@ -44,14 +44,14 @@
   width: 30vw;
   position: relative;
   top: 0vw;
-  right: -80px;
+  right: -60px;
 }
 
 .webletter {
   width: 400px;
   position: inherit;
   top: 200px;
-  right: 250px;
+  right: 300px;
   text-align: center;
   font-size: 80px;
   color: #fff;
@@ -60,7 +60,7 @@
 .porttext {
   position: relative;
   top: 400px;
-  right: 550px;
+  right: 600px;
   font-size: 60px;
   color: #fff;
 }
@@ -93,7 +93,7 @@
   color: #639F54;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .bg-img {
     display: none;
   }
@@ -114,24 +114,24 @@
   .explain .name-tag > img {
     width: 800px;
     border-radius: 30px;
-    right: -2px;
+    right: -1px;
   }
   .explain .webletter {
     width: 400px;
-    font-size: 90px;
+    font-size: 70px;
     text-align: center;
-    top: 230px;
+    top: 210px;
     right: 350px;
   }
   .explain .porttext {
     font-size: 60px;
-    top: 400px;
-    left: -670px;
+    top: 380px;
+    left: -630px;
   }
 
   .button {
     left: 20px;
-    bottom: 0px;
+    bottom: -60px;
     width: 450px;
     height: 100px;
   }

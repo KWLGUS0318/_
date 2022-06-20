@@ -1,1 +1,99 @@
-/*# sourceMappingURL=design-web.css.map */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIaKk/img.png"), auto;
+}
+
+#root {
+  width: 100vw;
+  font-family: "Nanum Brush Script", cursive;
+}
+#root > section {
+  width: inherit;
+  height: 100vh;
+  border: 1px solid red;
+}
+
+.map {
+  position: absolute;
+  right: 0;
+}
+
+.font {
+  position: relative;
+  z-index: 2;
+  font-size: 5rem;
+  top: 120px;
+  left: 40vw;
+}
+
+.back {
+  height: 30vw;
+  position: relative;
+  z-index: 1;
+  left: 36vw;
+  bottom: 2vw;
+}
+
+.text {
+  position: absolute;
+  left: 44vw;
+  top: 12.5vw;
+  line-height: 2.4;
+  z-index: 3;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.back-pt {
+  font-size: 3rem;
+  position: relative;
+  left: -9vw;
+  top: 3vw;
+  color: #fff;
+}
+
+.web-img {
+  position: relative;
+  z-index: 2;
+  top: 130px;
+  left: 28vw;
+}
+.web-img:hover {
+  border-bottom: 10px solid #744828;
+}
+
+.logo-img {
+  position: relative;
+  z-index: 2;
+  top: 280px;
+  right: 20vw;
+}
+.logo-img:hover {
+  border-bottom: 10px solid #744828;
+}
+
+.illust-img {
+  position: relative;
+  z-index: 2;
+  top: 290px;
+  left: 28vw;
+}
+.illust-img:hover {
+  border-bottom: 10px solid #744828;
+}
+
+.back-img {
+  position: relative;
+  z-index: 2;
+  top: 450px;
+  right: 18vw;
+}
+.back-img:hover {
+  border-bottom: 10px solid #744828;
+}/*# sourceMappingURL=design-web.css.map */
