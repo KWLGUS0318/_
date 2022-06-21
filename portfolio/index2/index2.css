@@ -47,11 +47,11 @@ z-index: 1;
 }
 
 .about-window {
-  width: 750px;
-  height: 550px;
+  width: 85%;
+  height: 88%;
   position: inherit;
-  bottom: 60px;
-  left: -4vw; bottom: -90px;
+  bottom: -12%;
+  left: -10%;
   z-index: 2;
 }
 
@@ -181,11 +181,11 @@ z-index: 1;
   height: 5vw;
   transform: rotateY(180deg);
   position: relative;
-  top: 30px; right: 80px;
+  top: 20px; right: 90px;
 }
 
 .door {
-  width: 30vw;
+  width: 500px;
   perspective: 1000px;
 }
 
@@ -210,21 +210,20 @@ z-index: 1;
   backface-visibility: hidden;
 }
 .door-front>img{
-  width: 13vw;
-  height:  23vw;
+  width: 50%;
+  height: 46vmin;
   position: inherit;
-  bottom: -2.3vw; right:12vw;
+  top: 4.3vmin; right: 35%;
 }
 .door-back{
   position: inherit;
-  bottom: -2.3vw; right: -4vw;
+  bottom: -4.3vmin; right: -4px;
   transform: rotateY(180deg);
 }
 
 .door-back>a>button{
-  width: 13vw;
-  height:  23vw;
-
+  width: 50%;
+  height: 46vmin;
   border-top-left-radius: 30vw;
   border-top-right-radius: 30vw;
   cursor: pointer;
@@ -281,7 +280,7 @@ z-index: 1;
 
 
 /* tablet - version*/
-@media (max-width:500px) {
+@media (max-width:1000px) {
   .about {
     width: inherit;
     border: none;

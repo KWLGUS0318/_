@@ -44,7 +44,7 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 }
 .text{
   position: absolute;
-  left: 44vw; top: 12.5vw;
+  left: 44vw; top: 12vw;
   line-height: 2.4;
   z-index: 3;
   font-size: 2.5rem;
@@ -54,13 +54,13 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 .back-pt{
   font-size: 3rem;
   position: relative;
-  left: -9vw; top: 3vw;
+  left: -9vw; top: 2vw;
   color: #fff;
 }
 
 .web-img{
   @include posi();
-  top: 130px; left: 28vw;
+  top: 130px; left: 56vmin;
 
   &:hover{
     border-bottom: 10px solid #744828;
@@ -70,7 +70,7 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 
 .logo-img{
   @include posi();
-  top: 280px; right: 20vw;
+  top: 280px; left: -30vmin;
   &:hover{
     border-bottom: 10px solid #744828;
   }
@@ -79,14 +79,14 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 
 .illust-img{
   @include posi();
-  top: 290px; left: 28vw;
+  top: 290px; left: 56vmin;
   &:hover{
     border-bottom: 10px solid #744828;
   }
 }
 .back-img{
   @include posi();
-  top: 450px; right: 18vw;
+  top: 450px; right: 26vmin;
 
   &:hover{
     border-bottom: 10px solid #744828;
