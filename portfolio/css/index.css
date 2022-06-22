@@ -2,15 +2,23 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 /*초록색 창*/
@@ -20,6 +28,7 @@
   position: inherit;
   background-color: #639F54;
 }
+
 .explain > img {
   width: 300px;
   height: 400px;
@@ -37,9 +46,14 @@
   position: relative;
   top: 50px;
   left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .name-tag > img {
   width: 30vw;
   position: relative;
@@ -85,10 +99,13 @@
   font-size: 35px;
   cursor: pointer;
 }
+
 .button:hover {
   width: 300px;
+  -webkit-transition: 1s;
   transition: 1s;
-  transform: translate(30%, 30%);
+  -webkit-transform: translate(30%, 30%);
+          transform: translate(30%, 30%);
   background-color: #fff;
   color: #639F54;
 }
@@ -97,7 +114,6 @@
   .bg-img {
     display: none;
   }
-
   .explain {
     width: 100%;
   }
@@ -121,23 +137,25 @@
     font-size: 70px;
     text-align: center;
     top: 210px;
-    right: 350px;
+    right: 340px;
   }
   .explain .porttext {
     font-size: 60px;
     top: 380px;
-    left: -630px;
+    left: -610px;
   }
-
   .button {
     left: 20px;
-    bottom: -60px;
+    bottom: 30px;
     width: 450px;
     height: 100px;
   }
   .button:hover {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
     transition: none;
     width: 450px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */

@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 /*초록색 창*/
 .explain {
@@ -85,7 +86,7 @@
   border-radius: 60px;
   position: absolute;
   z-index: 2;
-  right: 300px;
+  right: 300px; 
   color: #fff;
   border: 5px solid #fff;
   background-color: rgba(0, 0, 0, 0);
@@ -134,18 +135,18 @@
       font-size: 70px;
       text-align: center;
       top: 210px;
-      right: 350px;
+      right: 340px;
     }
 
     .porttext {
       font-size: 60px;
       top: 380px;
-      left: -630px;
+      left: -610px;
     }
 
   }
   .button{
-    left: 20px; bottom: -60px;
+    left: 20px; bottom: 30px;
     width: 450px;
     height: 100px;
 

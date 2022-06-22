@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/design-web.css">
+  <script src="./js/index2.js"></script>
   <title>포트폴리오</title>
 </head>
 
@@ -19,6 +20,7 @@
          <h1>web</h1>
         <h1>logo</h1>
         <h1>illust</h1>
+      </div>
         <h1 class="back-pt">background-photo</h1>
       </div>
      
@@ -36,37 +38,7 @@
     <section id = 'illust'>illust</section>
     <section id ='background'>background-photo</section>
 </div>
-  </div>
+</div>
 
-  <script>
-const root = document.querySelector('#root');
-console.log(root)
-
-const sections = document.querySelectorAll('#root>section')
-console.log(sections)
-
-
-console.dir(root);
-
-console.dir(sections[0]);
-
-let heightValue = 0; 
-
-window.addEventListener('click', function () {
-heightValue = heightValue + sections[0].offsetHeight;
-console.log(heightValue);
-
-window.scrollTo({
-  top: heightValue,
-  behavior: "smooth" //동작 
-})
-if (heightValue >= root.offsetHeight) { 
-  heightValue = 0;
-}
-})
-
-//window.confirm('천천히 보고 싶으시다면 바탕을 눌러주세요~!')
-  </script>
-
-
+</body>
 </html>

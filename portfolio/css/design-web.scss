@@ -8,6 +8,8 @@
   position: relative;
   z-index: 2;
 }
+
+
 body{
 cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIaKk/img.png"), auto;
 }
@@ -17,9 +19,10 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 
 
   &>section {
-    width: inherit;
+    width: 100vw;
     height: 100vh;
-    border: 1px solid red;
+    border: 1px dotted #000;
+    overflow: hidden;
   }
 }
 
@@ -36,11 +39,11 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 }
 
 .back {
-  height: 30vw;
+  height: 40vw;
   position: relative;
   z-index: 1;
-  left: 36vw;
-  bottom: 2vw;
+  left: 604px;
+  bottom: 8vw;
 }
 .text{
   position: absolute;
@@ -90,5 +93,45 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 
   &:hover{
     border-bottom: 10px solid #744828;
+  }
+}
+@mixin shape {
+  width: 450px;
+  height: 110px;
+}
+@media (max-width:800px){
+  .font{
+    left: 80px;
+  }
+  .text{
+    top: 245px; left: 170px;
+    line-height: 3;
+    font-size: 2rem
+  }
+  .web-img{
+    @include shape();
+    left: 26px; top: 180px;
+  }
+  .logo-img{
+   @include shape();
+    left: 28px; top: 200px;
+  }
+  .illust-img{
+    @include shape();
+    left: 28px; top: 220px;
+
+  }
+  .back-img{
+    @include shape();
+    top: 250px; left: 20px;
+  }
+  .back{
+    width: 50vw;
+    height: 800px;
+    top: -280px; left: 100px;
+  }
+  .back-pt{
+    font-size: 1.8rem;
+    left: -75px; top: 20px;
   }
 }

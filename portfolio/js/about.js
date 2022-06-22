@@ -23,16 +23,11 @@ square.style.width = "2000px"
 square.style.height = "800px";
 square.style.backgroundColor = color1;
 square.style.transform = 'rotate(10deg)'
-square.style.position = 'relative';
-square.style.top = '-65vmin'
-square.style.left = '30vmin'
+square.style.position = 'absolute';
+square.style.top = '-600px'
+square.style.left = '5vmin'
 square.style.zIndex =1;
 
-const about = document.createElement('h1')
-square.appendChild(about)
-about.innerHTML = "ABOUT";
-about.style.color = "#000";
 
-about.style.position = "absolute";
-about.style.zIndex = 2;
-about.style.top = '150vw'
+const photoHov = document.getElementsByClassName('photo-hover>p')
+console.log(photoHov)

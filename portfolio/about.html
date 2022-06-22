@@ -5,9 +5,77 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .photo{
+      position: absolute;
+      top: 300px; left: 200px;
+      width: 20vw;
+      border-radius: 6vw;
+    }
+  
+    .about{
+      position: absolute;
+      z-index: 2;
+      right: 5vw;
+      color: #fff;
+      font-size: 5rem;
+    }
+    .tree{
+      position: absolute;
+      z-index: 1;
+      width: 35vw;
+      right: 10px;
+      bottom: 4vw;
+    }
+    .leaf{
+      width: 25vw;
+      position: relative;
+      top: 80px; left: 50vw;
+      z-index: 2;
+    }
+    .leaf2{
+      width: 25vw;
+      position: relative;
+      top: 300px; left: 60px;
+    }
+
+    .photo-hover {
+    position: absolute;
+    width: 15vw;
+    height: 80px;
+    left: 13vw;
+    top: 180px;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.photo-hover:after {
+    border-top: 30px solid #7DB035;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 0px solid transparent;
+
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 160px;
+}
+
+    
+  </style>
 </head>
 <body>
   <script src="./js/about.js"></script>
+  <h1 class='about'>ABOUT</h1>
+  <div class="photo-hover">
+  <p>click me!</p>
+  </div>
+  <a href="#"><img class="photo" src="./img/port-img.png" alt="내 이미지"></a>
+  <img class= 'tree'src="./img/나무.png" alt="">
+  <img class='leaf'src="./img/나뭇잎1.png" alt="">
+  <img class = 'leaf2'src="./img/나뭇잎2.png" alt="">
 </div>
 
 
