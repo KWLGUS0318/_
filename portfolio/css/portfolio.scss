@@ -205,7 +205,7 @@
   }
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
   .hera {
   @include photo1();
   @include bright();
@@ -216,13 +216,13 @@
   .book-diary {
     @include photo1();
     @include bright();
-    top: 85vw;
+    top: 380px;
   }
 
   .photo {
     width: 65vw;
     position: absolute;
-    top: 170vw;
+    top: 830px;
     left: 30vw;
     @include bright();
 
