@@ -1,8 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,9 +10,9 @@ body {
 
 #root {
   width: 100vw;
-  font-family: 'Nanum Brush Script', cursive;
+  font-family: "Nanum Brush Script", cursive;
+  overflow: hidden;
 }
-
 #root > section {
   width: 100vw;
   height: 100vh;
@@ -31,21 +30,21 @@ body {
   z-index: 2;
   font-size: 5rem;
   top: 120px;
-  left: 40vw;
+  left: 850px;
 }
 
 .back {
-  height: 40vw;
+  height: 800px;
   position: relative;
   z-index: 1;
-  left: 604px;
+  left: 630px;
   bottom: 8vw;
 }
 
 .text {
   position: absolute;
-  left: 44vw;
-  top: 12vw;
+  left: 900px;
+  top: 270px;
   line-height: 2.4;
   z-index: 3;
   font-size: 2.5rem;
@@ -56,18 +55,18 @@ body {
 .back-pt {
   font-size: 3rem;
   position: relative;
-  left: -9vw;
-  top: 2vw;
+  left: 750px;
+  top: 680px;
   color: #fff;
+  z-index: 3;
 }
 
 .web-img {
   position: relative;
   z-index: 2;
   top: 130px;
-  left: 56vmin;
+  left: 590px;
 }
-
 .web-img:hover {
   border-bottom: 10px solid #744828;
 }
@@ -76,9 +75,8 @@ body {
   position: relative;
   z-index: 2;
   top: 280px;
-  left: -30vmin;
+  left: -240px;
 }
-
 .logo-img:hover {
   border-bottom: 10px solid #744828;
 }
@@ -87,9 +85,8 @@ body {
   position: relative;
   z-index: 2;
   top: 290px;
-  left: 56vmin;
+  left: 600px;
 }
-
 .illust-img:hover {
   border-bottom: 10px solid #744828;
 }
@@ -98,57 +95,62 @@ body {
   position: relative;
   z-index: 2;
   top: 450px;
-  right: 26vmin;
+  right: 200px;
 }
-
 .back-img:hover {
   border-bottom: 10px solid #744828;
 }
 
 @media (max-width: 800px) {
   .font {
-    left: 80px;
+    left: 120px;
   }
+
   .text {
-    top: 245px;
-    left: 170px;
-    line-height: 3;
+    top: 304px;
+    left: 200px;
+    line-height: 2.7;
     font-size: 2rem;
   }
+
   .web-img {
     width: 450px;
     height: 110px;
-    left: 26px;
+    left: 55px;
     top: 180px;
   }
+
   .logo-img {
     width: 450px;
     height: 110px;
-    left: 28px;
+    left: 55px;
     top: 200px;
   }
+
   .illust-img {
     width: 450px;
     height: 110px;
-    left: 28px;
+    left: 55px;
     top: 220px;
   }
+
   .back-img {
     width: 450px;
     height: 110px;
     top: 250px;
-    left: 20px;
+    left: 50px;
   }
+
   .back {
     width: 50vw;
     height: 800px;
-    top: -280px;
-    left: 100px;
+    top: -300px;
+    left: 150px;
   }
+
   .back-pt {
     font-size: 1.8rem;
-    left: -75px;
-    top: 20px;
+    left: 100px;
+    top: 660px;
   }
-}
-/*# sourceMappingURL=design-web.css.map */
+}/*# sourceMappingURL=design-web.css.map */

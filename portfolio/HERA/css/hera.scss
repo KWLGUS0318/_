@@ -11,44 +11,95 @@
 #root {
   width: 100vw;
   height: 300vh;
+  overflow: hidden;
 
+  /*로고 창*/
   &>header {
     width: inherit;
     height: 15vh;
     border-bottom: 1px solid #000;
     position: relative;
+    background-color: #fff;
+    z-index: 2;
+
+  /*로고 이미지*/
 
     &>img {
       position: absolute;
-      left: 50%;
+      left: 43%;
       top: 30px;
     }
   }
 
 }
 .profile{
-  width: 40px;
+  width: 30px;
   position: absolute;
   right: 5vw; top: 50px;
 }
 .bucket{
-  width: 50px;
+  width: 35px;
   position: absolute;
-  right: 10vw; top: 50px;
+  right: 15vmin; top: 50px;
+}
+
+
+  /* 회원가입 말풍선 */
+
+.sign {
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  right: 38px; bottom: 12px;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 12.8px;
+  transform: rotate(180deg);
+  animation: 1s signup infinite;
+  &>p{
+    transform: rotate(180deg);
+    position: absolute;
+    right: 15px; top: 2px;
+  }
+}
+
+
+.sign:after {
+  border-top: 10px solid #000;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 16px;
+}
+
+  /*말풍선 애니메이션*/
+
+
+@keyframes signup{
+  40%{bottom: 12px;}
+  60%{bottom: 12px;}
+  90%{bottom: 14px;}
 }
 
 /* 바탕*/
 
 .menu {
   position: relative;
+  top: 0px;
   display: inline-block;
   width: inherit;
-  height: 10vh;
+  height: 7vh;
   background-color: #000;
+  z-index: 2;
 
   &:hover{
     background-color: #fff;
     border-bottom: 1px solid #000;
+    z-index: 2;
   }
 }
 
@@ -58,7 +109,7 @@
   color: #fff;
   font-size: 16px;
   position: sticky;
-  margin: 30px 0px 0px 23.3vw
+  margin: 20px 0px 0px 20vw
 }
 
 /* a link*/
@@ -67,7 +118,7 @@
   width: 80vw;
   display: none;
   position: absolute;
-  top: 80px;
+  top: 50px;
   left: 60px;
   background-color: #f1f1f1;
   min-width: 160px;
@@ -105,12 +156,36 @@
     } 
     
     &>p{
-    font-size: 2em;
+    font-size: 3rem;
     position: relative;
     top: -255px; left: 8vw;
   }
   }
   
+  .personal-test{
+    position:fixed;
+    top: 600px; left: 50px;
+    width: 130px;
+    height: 130px;
+    border-radius: 90px;
+    background-color: #fff;
+    z-index: 2;
+
+    &>button{
+      appearance: none;
+      background-color: transparent;
+      border: none;
+      position: fixed;
+      left: 50px;
+      font-size: 2rem;
+      color: #000;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+  }
+
+  .on{display: none;}
 
 
 .enter{
@@ -124,16 +199,83 @@
 
 section{
   width: 100vw;
-  height: 50vw;
+  height: 30vw;
   border: 1px solid black;
+  margin-top: 5vw;
 }
-@media (max-width:500px){
+
+.title{
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  padding-top: 3vw;
+
+}
+
+.popular{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  display: flex;
+  &>a{
+    display: flex;
+    background-color: #E6E6E6;
+  }
+  &>a>img{
+    width: 100%;
+    height: 90%;
+    margin: 0vw 22vw 0vw 5vw;
+  }
+
+  &>a>img:hover{
+    width: 120%;
+    height: 100%;
+  }
+}
+
+.popular-price {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border: 1px solid black;
+  display: flex;
+
+  &>span{
+    width: 33.3%;
+    border: 1px solid black;
+  }
+ 
+  &>span>h2{
+    font-size: 2.5rem;
+    padding: 2vw 4vw 0vw 3vw;
+  }
+}
+
+
+.name{
+  position: relative;
+  top: 20px;
+  font-size: 2rem
+  ;
+}
+.price{
+  width: 10px;
+  position: relative;
+  right: 0px;
+}
+
+@media (max-width:800px){
   .menubtn{
-    margin: 7vw 40px 0vw 12vw;
+    margin: 25px 40px 0px 60px;
   }
   .add{
-    &>p{
-      font-size: 1rem;
-    }
+   &>p{
+    font-size: 1.3rem;
+   }
   }
+ 
 }

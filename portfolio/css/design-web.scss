@@ -8,7 +8,10 @@
   position: relative;
   z-index: 2;
 }
-
+@mixin shape {
+  width: 450px;
+  height: 110px;
+}
 
 body{
 cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIaKk/img.png"), auto;
@@ -16,6 +19,7 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 #root {
   width: 100vw;
   font-family: 'Nanum Brush Script', cursive;
+  overflow: hidden;
 
 
   &>section {
@@ -35,19 +39,19 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
   @include posi();
   font-size: 5rem;
   top: 120px;
-  left: 40vw;
+  left: 850px;
 }
 
 .back {
-  height: 40vw;
+  height: 800px;
   position: relative;
   z-index: 1;
-  left: 604px;
+  left: 630px;
   bottom: 8vw;
 }
 .text{
   position: absolute;
-  left: 44vw; top: 12vw;
+  left: 900px; top: 270px;
   line-height: 2.4;
   z-index: 3;
   font-size: 2.5rem;
@@ -57,13 +61,14 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 .back-pt{
   font-size: 3rem;
   position: relative;
-  left: -9vw; top: 2vw;
+  left: 750px; top: 680px;
   color: #fff;
+  z-index: 3;
 }
 
 .web-img{
   @include posi();
-  top: 130px; left: 56vmin;
+  top: 130px; left: 590px;
 
   &:hover{
     border-bottom: 10px solid #744828;
@@ -73,7 +78,7 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 
 .logo-img{
   @include posi();
-  top: 280px; left: -30vmin;
+  top: 280px; left: -240px;
   &:hover{
     border-bottom: 10px solid #744828;
   }
@@ -82,56 +87,62 @@ cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIa
 
 .illust-img{
   @include posi();
-  top: 290px; left: 56vmin;
+  top: 290px; left: 600px;
   &:hover{
     border-bottom: 10px solid #744828;
   }
 }
 .back-img{
   @include posi();
-  top: 450px; right: 26vmin;
+  top: 450px; right: 200px;
 
   &:hover{
     border-bottom: 10px solid #744828;
   }
 }
-@mixin shape {
-  width: 450px;
-  height: 110px;
-}
+
+
+
+
+
+
+
+
+
+
 @media (max-width:800px){
   .font{
-    left: 80px;
+    left: 120px;
   }
   .text{
-    top: 245px; left: 170px;
-    line-height: 3;
+    top: 304px; left: 200px;
+    line-height: 2.7;
     font-size: 2rem
   }
   .web-img{
     @include shape();
-    left: 26px; top: 180px;
+    left: 55px; top: 180px;
   }
   .logo-img{
    @include shape();
-    left: 28px; top: 200px;
+    left: 55px; top: 200px;
   }
   .illust-img{
     @include shape();
-    left: 28px; top: 220px;
+    left: 55px; top: 220px;
 
   }
   .back-img{
     @include shape();
-    top: 250px; left: 20px;
+    top: 250px; left: 50px;
   }
   .back{
     width: 50vw;
     height: 800px;
-    top: -280px; left: 100px;
+    top: -300px; left: 150px;
   }
   .back-pt{
     font-size: 1.8rem;
-    left: -75px; top: 20px;
+    left: 100px; top: 660px;
   }
 }
