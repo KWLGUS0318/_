@@ -69,7 +69,7 @@
   height: 25vh;
 
   position: relative;
-  top: -65px;
+  top: -75px;
   left: 50vw;
   z-index: 3;
   cursor: default;
@@ -103,7 +103,7 @@
 .diary-ex {
   color: #fff;
   position: relative;
-  top: -280px;
+  top: -250px;
   left: -180px;
   line-height: 2;
   text-align: center;
@@ -115,8 +115,9 @@
 .photo-ex {
   position: relative;
   left: 55vw;
-  bottom: 350px;
+  bottom: 340px;
   color: #fff;
+  z-index: 3;
   line-height: 2.5;
   @include open();
   @include hover();
@@ -137,15 +138,15 @@
 
 
 .shelf.top {
-  top: 300px;
+  top: 250px;
 }
 
 .shelf.middle {
-  top: 650px;
+  top: 550px;
 }
 
 .shelf.bottom {
-  top: 1030px;
+  top: 800px;
 }
 
 .shelf .face {
@@ -205,7 +206,7 @@
   }
 }
 
-@media (max-width:800px) {
+@media (max-width:500px) {
   .hera {
   @include photo1();
   @include bright();
@@ -216,25 +217,26 @@
   .book-diary {
     @include photo1();
     @include bright();
-    top: 380px;
+    top: 340px;
   }
 
   .photo {
     width: 65vw;
     position: absolute;
-    top: 830px;
+    top: 670px;
     left: 30vw;
     @include bright();
 
   }
 
   .shelf.middle {
-    top: 640px;
+    top: 500px;
   }
 
   .shelf.bottom {
-    top: 1050px;
+    top: 800px;
   }
+
 
   
   .hera-ex{display: none;}

@@ -1,17 +1,11 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  cursor: url("https://blog.kakaocdn.net/dn/BQXpN/btq3qNR67Lg/8tx8tGzkOcr5BuX5dyIaKk/img.png"), auto;
-}
-
 #root {
-  width: 100vw;
-  font-family: "Nanum Brush Script", cursive;
-  overflow: hidden;
+  width: 1512px;
 }
 #root > section {
   width: 100vw;
@@ -20,137 +14,72 @@ body {
   overflow: hidden;
 }
 
-.map {
-  position: absolute;
-  right: 0;
+.title {
+  width: 100%;
+  height: 10%;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 2rem;
 }
 
-.font {
-  position: relative;
-  z-index: 2;
-  font-size: 5rem;
-  top: 120px;
-  left: 850px;
+.wood {
+  width: 50%;
+  height: 90%;
+  z-index: 1;
+  margin-left: 25vw;
+  display: flex;
 }
 
 .back {
-  height: 800px;
+  margin-top: 5vw;
+  height: 70%;
   position: relative;
-  z-index: 1;
-  left: 630px;
-  bottom: 8vw;
+  left: 60px;
 }
 
-.text {
+.wood-section {
   position: absolute;
-  left: 900px;
-  top: 270px;
-  line-height: 2.4;
   z-index: 3;
-  font-size: 2.5rem;
+  right: 400px;
+  top: 150px;
+  height: 30px;
+}
+.wood-section > a > img {
+  width: 700px;
+  height: 100px;
+}
+.wood-section > a > h1 {
   color: #fff;
-  cursor: pointer;
-}
-
-.back-pt {
-  font-size: 3rem;
+  text-decoration: none;
+  text-decoration: none;
   position: relative;
-  left: 750px;
-  top: 680px;
-  color: #fff;
-  z-index: 3;
+  top: -70px;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.web-img {
-  position: relative;
-  z-index: 2;
-  top: 130px;
-  left: 590px;
-}
-.web-img:hover {
-  border-bottom: 10px solid #744828;
-}
-
-.logo-img {
-  position: relative;
-  z-index: 2;
-  top: 280px;
-  left: -240px;
-}
-.logo-img:hover {
-  border-bottom: 10px solid #744828;
-}
-
-.illust-img {
-  position: relative;
-  z-index: 2;
-  top: 290px;
-  left: 600px;
-}
-.illust-img:hover {
-  border-bottom: 10px solid #744828;
-}
-
-.back-img {
-  position: relative;
-  z-index: 2;
-  top: 450px;
-  right: 200px;
-}
-.back-img:hover {
-  border-bottom: 10px solid #744828;
-}
-
-@media (max-width: 800px) {
-  .font {
-    left: 120px;
+@media (max-width: 500px) {
+  .back {
+    width: 400px;
+    left: 0px;
+    top: 100px;
+    margin: 0;
+  }
+  .back > img {
+    width: 100%;
+    height: 900px;
   }
 
-  .text {
-    top: 304px;
-    left: 200px;
-    line-height: 2.7;
-    font-size: 2rem;
-  }
-
-  .web-img {
-    width: 450px;
-    height: 110px;
-    left: 55px;
-    top: 180px;
-  }
-
-  .logo-img {
-    width: 450px;
-    height: 110px;
-    left: 55px;
-    top: 200px;
-  }
-
-  .illust-img {
-    width: 450px;
-    height: 110px;
-    left: 55px;
-    top: 220px;
-  }
-
-  .back-img {
-    width: 450px;
-    height: 110px;
-    top: 250px;
+  .wood-section {
     left: 50px;
   }
-
-  .back {
-    width: 50vw;
-    height: 800px;
-    top: -300px;
-    left: 150px;
+  .wood-section > a > img {
+    width: 400px;
   }
-
-  .back-pt {
-    font-size: 1.8rem;
-    left: 100px;
-    top: 660px;
+  .wood-section > a > h1 {
+    left: 160px;
+    top: -80px;
+    text-align: center;
   }
 }/*# sourceMappingURL=design-web.css.map */

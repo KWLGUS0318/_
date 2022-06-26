@@ -12,45 +12,48 @@
 <body>
   <div id="root">
     <section>
-      <h1 class="font">DESIGN</h1>
+      <header class="title">
+        <h1>DESIGN</h1>
+      </header>
+
       <div class="wood">
-        <div class="text">
-          <h1>web</h1>
-          <h1>logo</h1>
-          <h1>illust</h1>
+        <div class="back">
+          <img src="./img/wood.png" alt="">
         </div>
-        <h1 class="back-pt">background-photo</h1>
+
+       <div class="wood-section">
+        <a href="#web"><img  class = 'web-img' src="./img/web.png" alt=""><h1>web</h1></a> 
+        <a href="#logo"><img class=" logo-img" src="./img/logo.png" alt=""><h1>logo</h1></a>
+        <a href="#illust"><img class ="illust-img"src="./img/illust.png" alt=""><h1>illust</h1></a>
+        <a href="#background"><img class="back-img" src="./img/background.png" alt=""><h1>PHOTO</h1></a>
+       </div>
+
+
       </div>
-      
-      <a href="#web"><img  class = 'web-img' src="./img/web.png" alt=""></a> 
-          <a href="#logo"><img class=" logo-img" src="./img/logo.png" alt=""></a>
-          <a href="#illust"><img class ="illust-img"src="./img/illust.png" alt=""></a>
-          <a href="#background"><img class="back-img" src="./img/background.png" alt=""></a>
-          <img src="./img/wood.png" alt="" class="back"> 
-          
-        </section>
-        
-        
-        <section id ='web'>
-          <div id="slide">
-            <li></li>
-            <li></li>
-            <li></li>
-
-            <button id="left"><</button>
-
-            <button id="right">></button>
-          </div>
+    </section>
 
 
-      
-        </section>
-        <section id ='logo'>logo</section>
-        <section id = 'illust'>illust</section>
-        <section id ='background'>background-photo</section>
+    <section id='web'>
+      <div id="slide">
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <button id="left">
+          <</button> <button id="right">>
+        </button>
       </div>
-    </div>
-    
-    <script src="./js/design.js"></script>
-  </body>
-  </html>
+
+
+
+    </section>
+    <section id='logo'>logo</section>
+    <section id='illust'>illust</section>
+    <section id='background'>background-photo</section>
+  </div>
+  </div>
+
+  <script src="./js/design.js"></script>
+</body>
+
+</html>
