@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @mixin display {
   display: flex;
   align-items: center;
@@ -22,7 +23,7 @@
     background-color: #fff;
     z-index: 2;
 
-  /*로고 이미지*/
+    /*로고 이미지*/
 
     &>img {
       position: absolute;
@@ -32,35 +33,48 @@
   }
 
 }
-.profile{
+
+.profile {
   width: 30px;
   position: absolute;
-  right: 5vw; top: 50px;
+  right: 5vw;
+  top: 50px;
 }
-.bucket{
+
+.bucket {
   width: 35px;
   position: absolute;
-  right: 15vmin; top: 50px;
+  right: 15vmin;
+  top: 50px;
 }
 
 
-  /* 회원가입 말풍선 */
+/* 회원가입 말풍선 */
 
 .sign {
   position: absolute;
-  width: 100px;
-  height: 25px;
-  right: 38px; bottom: 12px;
+  width: 70px;
+  height: 10px;
+  right: 38px;
+  bottom: -0px;
   background-color: #000;
-  color: white;
+
   border-radius: 5px;
   padding: 12px 12.8px;
   transform: rotate(180deg);
-  animation: 1s signup infinite;
-  &>p{
+  z-index: 3;
+  border: 1px solid #FFF;
+  animation: 1s signup;
+  animation-iteration-count: 2;
+
+  &>p {
     transform: rotate(180deg);
     position: absolute;
-    right: 15px; top: 2px;
+    text-align: center;
+    right: 15px;
+    top: 6px;
+    font-size: 0.3rem;
+    color: white;
   }
 }
 
@@ -72,17 +86,21 @@
   border-bottom: 10px solid transparent;
   content: "";
   position: absolute;
-  top: 24px;
+  top: 20px;
   right: 16px;
 }
 
-  /*말풍선 애니메이션*/
+/*말풍선 애니메이션*/
 
 
-@keyframes signup{
-  40%{bottom: 12px;}
-  60%{bottom: 12px;}
-  90%{bottom: 14px;}
+@keyframes signup {
+  60% {
+    bottom: 10px;
+  }
+
+  90% {
+    bottom: 12px;
+  }
 }
 
 /* 바탕*/
@@ -96,7 +114,7 @@
   background-color: #000;
   z-index: 2;
 
-  &:hover{
+  &:hover {
     background-color: #fff;
     border-bottom: 1px solid #000;
     z-index: 2;
@@ -122,89 +140,104 @@
   left: 60px;
   background-color: #f1f1f1;
   min-width: 160px;
-  z-index: 1;  display: flex;
+  z-index: 1;
+  display: flex;
   visibility: hidden;
-  
+
   &>a {
-  width: 20vw;
-  text-align: center;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  
-
-  &:hover{
-    background-color: #000; color: #fff;
-    display: flex;
+    width: 20vw;
+    text-align: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
 
 
+    &:hover {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+
+
+    }
   }
-}
 
 }
 
-.menu:hover .link{visibility: visible;}
-.menu:hover .menubtn {background-color: #fff; color: #000; border: none;}
+.menu:hover .link {
+  visibility: visible;
+}
+
+.menu:hover .menubtn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
 
 
-.add{
+.add {
   width: 100vw;
   height: 40vh;
-  &>img{
+
+  &>img {
     width: inherit;
     height: inherit;
-    } 
-    
-    &>p{
+  }
+
+  &>p {
     font-size: 3rem;
     position: relative;
-    top: -255px; left: 8vw;
+    top: -255px;
+    left: 8vw;
   }
-  }
-  
-  .personal-test{
-    position:fixed;
-    top: 600px; left: 50px;
-    width: 130px;
-    height: 130px;
-    border-radius: 90px;
-    background-color: #fff;
+}
+
+.personal-test {
+  position: fixed;
+  top: 600px;
+  left: 50px;
+  width: 130px;
+  height: 130px;
+  border-radius: 90px;
+  background-color: #fff;
+  z-index: 2;
+
+  &>button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    left: 50px;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
     z-index: 2;
-
-    &>button{
-      appearance: none;
-      background-color: transparent;
-      border: none;
-      position: fixed;
-      left: 50px;
-      font-size: 2rem;
-      color: #000;
-      cursor: pointer;
-      z-index: 2;
-    }
-
   }
 
-  .on{display: none;}
+}
+
+.on {
+  display: none;
+}
 
 
-.enter{
+.enter {
   position: absolute;
-  top: 450px; left: 55vw;
+  top: 450px;
+  left: 55vw;
   width: 10vw;
   height: 5vw;
   border: 4px solid black;
   background-color: #fff;
 }
 
-section{
+section {
   width: 100vw;
   height: 30vw;
   border: 1px solid black;
   margin-top: 5vw;
 }
 
-.title{
+.title {
   width: 100%;
   height: 80px;
   position: relative;
@@ -216,22 +249,24 @@ section{
 
 }
 
-.popular{
+.popular {
   width: 100%;
   height: 50%;
   position: relative;
   display: flex;
-  &>a{
+
+  &>a {
     display: flex;
     background-color: #E6E6E6;
   }
-  &>a>img{
+
+  &>a>img {
     width: 100%;
     height: 90%;
     margin: 0vw 22vw 0vw 5vw;
   }
 
-  &>a>img:hover{
+  &>a>img:hover {
     width: 120%;
     height: 100%;
   }
@@ -244,38 +279,44 @@ section{
   border: 1px solid black;
   display: flex;
 
-  &>span{
+  &>span {
     width: 33.3%;
     border: 1px solid black;
   }
- 
-  &>span>h2{
+
+  &>span>h2 {
     font-size: 2.5rem;
     padding: 2vw 4vw 0vw 3vw;
   }
 }
 
 
-.name{
+.name {
   position: relative;
   top: 20px;
-  font-size: 2rem
-  ;
+  font-size: 2rem;
 }
-.price{
+
+.price {
   width: 10px;
   position: relative;
   right: 0px;
 }
 
-@media (max-width:800px){
-  .menubtn{
-    margin: 25px 80px 0px 74px;
+@media (max-width:500px) {
+  .menubtn {
+    margin: 25px 4px 0px 50px;
+    line-height: 0;
   }
-  .add{
-   &>p{
-    font-size: 1.3rem;
-   }
+
+  .add {
+    &>p {
+      font-size: 1rem;
+    }
   }
- 
+  .sign{
+    position: absolute;
+    right: 0;
+  }
+
 }

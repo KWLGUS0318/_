@@ -36,18 +36,24 @@
     .leaf2{
       width: 25vw;
       position: relative;
-      top: 300px; left: 60px;
+      top: 300px; left: 130px;
     }
 
     .photo-hover {
     position: absolute;
-    width: 15vw;
-    height: 80px;
-    left: 13vw;
-    top: 180px;
-    background: #fff;
-    border: 1px solid black;
+    width: 10vw;
+    height: 30px;
+    left: 18vw;
+    top: 200px;
+    background:  #7DB035;
     border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 0;
+    z-index: 2;
+
+    animation: 1s click;
+    animation-iteration-count: 5;
 }
 
 
@@ -59,10 +65,15 @@
 
     content: "";
     position: absolute;
-    top: 80px;
-    left: 160px;
+    top: 25px;
+    left: 50px;z-index: 1;
 }
 
+@keyframes click{
+  0%{ }
+  20%{position: absolute; top: 235px; }
+  50%{position: absolute; top: 240px; }
+}
     
   </style>
 </head>
@@ -73,7 +84,11 @@
   <p>click me!</p>
   </div>
   <a href="#"><img class="photo" src="./img/port-img.png" alt="내 이미지"></a>
-  <img class= 'tree'src="./img/나무.png" alt="">
+  <h3>PROFILE</h3>
+  <P>NAME : 김지현</P>
+  <P>BIRTH : 1998.03.18</P>
+  <img class= 'tree'src="./img/나무.png" alt=""> 
+  <P>복지신학과 , 심리상담학 전공 <br> [디지털디자인]웹디자이너, 웹퍼블리셔 과정 수료</P>
   <img class='leaf'src="./img/나뭇잎1.png" alt="">
   <img class = 'leaf2'src="./img/나뭇잎2.png" alt="">
 </div>
