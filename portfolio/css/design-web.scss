@@ -46,7 +46,7 @@
 .wood-section {
   position: absolute;
   z-index: 3;
-  right: 400px;
+  right: 420px;
   top: 150px;
   height: 30px;
   &>a>img{
@@ -65,6 +65,10 @@
 }
 
 @media(max-width:500px){
+  *{box-sizing: border-box;}
+  #root{
+    height: 926px;
+  }
   .back{
     width: 400px;
     left: 0px; top: 100px;
@@ -75,7 +79,7 @@
     }
   }
   .wood-section{
-    left: 50px;
+    left: 0px;
     &>a>img{
       width: 400px;
     }

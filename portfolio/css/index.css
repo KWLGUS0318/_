@@ -89,21 +89,25 @@
 
 @media (max-width: 500px) {
   .explain > img {
-    left: 80px;
+    left: 20px;
   }
 
   .name-tag {
-    left: 60px;
+    width: 350px;
+    left: 28px;
+  }
+  .name-tag > img {
+    width: 348px;
   }
 
   .porttext {
-    left: 50px;
-    top: 130px;
+    left: 0px;
+    top: 140px;
     font-weight: 1;
   }
 
   .button {
-    left: 90px;
+    left: 40px;
     bottom: -200px;
   }
   .button:hover {

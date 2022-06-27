@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,52 +11,97 @@
   <title>ADD</title>
   <link rel="stylesheet" href="./CSS/store.css">
 </head>
+
 <body>
 
   <div id="root">
-    <section>
-      <div></div>
+    <section class="profile">
+      <div><a href=""><img src="./IMG/person.png.png" alt=""></a></div>
       <div>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>LV <strong>BRONZE</strong></p>
+        <p>NAME</p>
+        <p>입장연속일</p>
       </div>
     </section>
-  
-    <input type="text">
 
-    <section>
+    <div class="search">
+      <input type="text"> <a href=""><img src="./IMG/돋보기.png" alt=""></a>
+    </div>
+
+
+    <section class="sort">
       <a href=""><button>해먹자</button></a>
       <a href=""><button>사먹자</button></a>
     </section>
-   <section>
-    <a href=""> <img src="./IMG/해먹기/한식.png" alt=""></a>
-    <a href=""> <img src="./IMG/해먹기/양식.png" alt=""></a>
-    <a href=""> <img src="./IMG/해먹기/분식.png" alt=""></a>
-    <a href=""> <img src="./IMG/해먹기/일식.png" alt=""></a>
-    <a href="#"><button class="next">></button></a>
-   </section>
 
-  <h3>오늘 이거 어때요?</h3>
-  <section>
-  <a href=""><img src="./IMG/해먹기/유부초밥.png" alt=""></a>
-  <a href=""><img src="./IMG/해먹기/연어.png" alt=""></a>
-  <a href=""><img src="./IMG/해먹기/곤약비빔면.png" alt=""></a>
-</section>
 
-<section>
-  <a href=""><img src="./IMG/해먹기/나베.png" alt=""></a>
-  <a href=""><img src="./IMG/해먹기/닭가슴살 탕수육.png" alt=""></a>
-  <a href=""><img src="./IMG/해먹기/월남쌈.png" alt=""></a>
-</section>
+    <section class="food">
+      <div class="food-group">
+        <a href="#"> <img src="./IMG/해먹기/한식.png" alt=""></a>
+        <a href=""> <img src="./IMG/해먹기/양식.png" alt=""></a>
+        <a href=""> <img src="./IMG/해먹기/분식.png" alt=""></a>
+        <a href=""> <img src="./IMG/해먹기/일식.png" alt=""></a>
+        <a href="#"><button class="next">></button></a>
+      </div>
+      <div class="food-font">
+        <a href="">
+          <p>한식</p>
+        </a>
+        <a href="">
+          <p class="none">양식</p>
+        </a>
+        <a href="">
+          <p>분식</p>
+        </a>
+        <a href="">
+         <p>일식</p>
+        </a>
 
-<bottom> 
-  <a href=""></a>
-  <a href=""></a>
-  <a href=""></a>
-  <a href=""></a>
-  <a href=""></a>
-</bottom>
+      </div>
+    </section>
+
+
+
+    <section class="food-buy">
+      <div class="food-group">
+        <a href="#"> <img src="./IMG/해먹기/중식.png" alt=""></a>
+        <a href=""> <img src="./IMG/해먹기/간식.png" alt=""></a>
+       
+        <a href="#"><button class="previous"><</button></a>
+      </div>
+      <div class="food-font-buy">
+        <a href="">
+          <p>중식</p>
+        </a>
+        <a href="">
+          <p class="none">간식</p>
+        </a>
+     
+      </div>
+    </section>
+
+
+    <h3 class="recommand">오늘 이거 어때요?</h3>
+    <section class="recomand-food1">
+      <a href=""><img src="./IMG/해먹기/유부초밥.png" alt=""></a>
+      <a href=""><img src="./IMG/해먹기/연어.png" alt=""></a>
+      <a href=""><img src="./IMG/해먹기/곤약비빔면.png" alt=""></a>
+    </section>
+
+    <section class="recomand-food1">
+      <a href=""><img src="./IMG/해먹기/나베.png" alt=""></a>
+      <a href=""><img src="./IMG/해먹기/닭가슴살 탕수육.png" alt=""></a>
+      <a href=""><img src="./IMG/해먹기/월남쌈.png" alt=""></a>
+    </section>
+
+    <bottom class="bottom-bar">
+      <a href=""><img src="./IMG/menu.png" alt=""></a>
+      <a href=""><img src="./IMG/fff-캘린더.png" alt=""></a>
+      <img class="home" src="./IMG/home.png" alt="">
+      <a href=""><img src="./IMG/fff-bucket.png" alt=""></a>
+      <a href=""><img src="./IMG/fff-personal.png" alt=""></a>
+    </bottom>
   </div>
 </body>
+<script src="./CSS/store.js"></script>
 </html>
