@@ -125,6 +125,7 @@
   background-color: #fff;
   position: relative;
   top: -20px;
+  display: none;
   z-index: 1;
   margin: 10px 3px 0px 10px;}
 
@@ -147,6 +148,8 @@
 .on{
   display: none;
 }
+.off{display: block;}
+
 
 .home{
   width: 60px;
