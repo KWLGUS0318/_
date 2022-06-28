@@ -35,13 +35,13 @@
   margin-top: 5vw;
   height: 70%;
   position: relative;
-  left: 60px;
+  left: 160px;
 }
 
 .wood-section {
   position: absolute;
   z-index: 3;
-  right: 420px;
+  right: 600px;
   top: 150px;
   height: 30px;
 }
@@ -80,13 +80,13 @@
   }
 
   .wood-section {
-    left: 0px;
+    left: 50px;
   }
   .wood-section > a > img {
     width: 400px;
   }
   .wood-section > a > h1 {
-    left: 160px;
+    left: 150px;
     top: -80px;
     text-align: center;
   }

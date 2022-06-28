@@ -13,11 +13,12 @@ console.log(food2)
 
 
 next.addEventListener('click', function () {
-  if (food1.classList.add('on')) {} 
+  if (food1.classList.add('on')) {
+     food1.classList.add('on')
+  } 
   else {
     food2.classList.add('off')
   }
-  food1.classList === 'on'
 })
 
 

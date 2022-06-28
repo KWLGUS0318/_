@@ -24,7 +24,7 @@ if (heightValue >= root.offsetHeight) {
 }
 })
 
-window.confirm('천천히 보고 싶으시다면 바탕을 눌러주세요~!')
+//window.confirm('천천히 보고 싶으시다면 바탕을 눌러주세요~!')
 
 
 

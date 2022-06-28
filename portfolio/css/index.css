@@ -5,7 +5,7 @@
 }
 
 #root {
-  width: 1512px;
+  width: 100vw;
   height: 982px;
   overflow: hidden;
   display: flex;
@@ -21,7 +21,7 @@
 .explain > img {
   position: relative;
   top: -200px;
-  left: 100px;
+  left: 160px;
 }
 
 .bg-img {
@@ -34,7 +34,7 @@
 .name-tag {
   position: relative;
   top: -170px;
-  left: 100px;
+  left: 160px;
   width: 400px;
   height: 130px;
   border-radius: 40px;
@@ -88,13 +88,20 @@
 }
 
 @media (max-width: 500px) {
+  .bg-img {
+    display: none;
+  }
+
+  .explain {
+    width: 100%;
+  }
   .explain > img {
-    left: 20px;
+    left: 40px;
   }
 
   .name-tag {
     width: 350px;
-    left: 28px;
+    left: 50px;
   }
   .name-tag > img {
     width: 348px;
@@ -107,8 +114,8 @@
   }
 
   .button {
-    left: 40px;
-    bottom: -200px;
+    left: 45px;
+    bottom: 0px;
   }
   .button:hover {
     transform: none;

@@ -101,7 +101,7 @@
   transform-style: preserve-3d;
 
   transform: rotateY(90deg);
-  transform-origin: 623px;
+  transform-origin: 778px;
   z-index: 1;
 
   overflow: hidden;
@@ -187,7 +187,7 @@
   position: absolute;
   transform-style: preserve-3d;
   transform: rotateY(-90deg);
-  transform-origin: -8px;
+  transform-origin: -10px;
   z-index: 1;
 }
 
