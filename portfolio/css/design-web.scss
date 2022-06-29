@@ -49,6 +49,9 @@
   right: 600px;
   top: 150px;
   height: 30px;
+  &>a:link{
+    text-decoration: none;
+  }
   &>a>img{
     width: 700px;
     height: 100px;
@@ -62,6 +65,22 @@
     font-size: 2rem;
     text-align: center;
   }
+}
+
+.web-img:hover{
+  border-bottom: 20px solid #A07354;
+}
+
+.logo-img:hover{
+  border-bottom: 20px solid #A07354;
+}
+
+.illust-img:hover{
+  border-bottom: 20px solid #A07354;
+}
+
+.back-img:hover{
+  border-bottom: 20px solid #A07354;
 }
 
 @media(max-width:500px){

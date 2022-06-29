@@ -159,7 +159,7 @@ input {
   justify-content: space-around;
   position: relative;
   right: -200px;
-  top: 150px;
+  top: 90px;
 }
 .btngroup > button {
   width: 80px;
@@ -225,10 +225,6 @@ input {
 
 .flex {
   display: flex;
-  margin-bottom: 10px;
-}
-.flex > input {
-  width: 170px;
 }
 .flex > p {
   font-size: 1.5rem;
@@ -342,11 +338,4 @@ input {
 }
 .home:hover {
   border: 3px solid #fff;
-}
-
-.check {
-  position: relative;
-  top: 100px;
-  left: 80px;
-  width: 240px;
-}/*# sourceMappingURL=food.css.map */
+}/*# sourceMappingURL=exercise.css.map */

@@ -45,6 +45,9 @@
   top: 150px;
   height: 30px;
 }
+.wood-section > a:link {
+  text-decoration: none;
+}
 .wood-section > a > img {
   width: 700px;
   height: 100px;
@@ -57,6 +60,22 @@
   top: -70px;
   font-size: 2rem;
   text-align: center;
+}
+
+.web-img:hover {
+  border-bottom: 20px solid #A07354;
+}
+
+.logo-img:hover {
+  border-bottom: 20px solid #A07354;
+}
+
+.illust-img:hover {
+  border-bottom: 20px solid #A07354;
+}
+
+.back-img:hover {
+  border-bottom: 20px solid #A07354;
 }
 
 @media (max-width: 500px) {

@@ -151,7 +151,7 @@ input {
   justify-content: space-around;
   position: relative;
   right: -200px;
-  top: 150px;
+  top: 90px;
   &>button{
     width: 80px;
     height: 40px;
@@ -219,8 +219,6 @@ input {
 
 .flex {
   display: flex;
-  margin-bottom: 10px;
-  &>input{width: 170px;}
   
   
   
@@ -362,8 +360,3 @@ input {
   }
 }
 
-.check{
-  position: relative;
-  top: 100px; left: 80px;
-  width: 240px;
-}

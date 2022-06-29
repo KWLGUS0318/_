@@ -55,8 +55,8 @@
   position: absolute;
   width: 70px;
   height: 10px;
-  right: 38px;
-  bottom: -0px;
+  right: 70px;
+  bottom: 13px;
   background-color: #000;
 
   border-radius: 5px;
@@ -65,7 +65,7 @@
   z-index: 3;
   border: 1px solid #FFF;
   animation: 1s signup;
-  animation-iteration-count: 2;
+  animation-iteration-count: 4;
 
   &>p {
     transform: rotate(180deg);
@@ -99,7 +99,7 @@
   }
 
   90% {
-    bottom: 12px;
+    bottom: 15px;
   }
 }
 
@@ -247,6 +247,7 @@ section {
   font-size: 3rem;
   padding-top: 3vw;
 
+
 }
 
 .popular {
@@ -286,21 +287,40 @@ section {
 
   &>span>h2 {
     font-size: 2.5rem;
-    padding: 2vw 4vw 0vw 3vw;
+    padding: 1vw 4vw 0vw 1vw;
   }
 }
 
 
 .name {
   position: relative;
-  top: 20px;
+  bottom: - 150px;
+  left: 20px;
   font-size: 2rem;
 }
 
 .price {
-  width: 10px;
   position: relative;
-  right: 0px;
+  left: 390px;
+  top: -90px;
+  text-decoration: line-through;
+  font-size: 2.5rem;
+}
+
+.percent {
+  color: #FF0A0A;
+  font-size: 2.4rem;
+  position: relative;
+  top: -60px;
+  right: -300px;
+}
+
+.sale-price {
+  position: relative;
+  right: -404px;
+  top: -80px;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 @media (max-width:500px) {
@@ -314,9 +334,38 @@ section {
       font-size: 1rem;
     }
   }
-  .sign{
+
+  .sign {
     position: absolute;
     right: 0;
   }
 
+}
+
+.popular-1 {
+  display: flex;
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  &>a:link{
+      text-decoration: none; }
+  &>a>p {
+    font-size: 1.5rem;
+    position: relative;
+    top: 20px;
+    left: 60px;
+    color: black;
+    }
+  
+
+  &>a>img {
+    width: 25vw;
+    height: 40vh;
+
+    &:hover {
+      width: 26vw;
+    }
+
+  }
 }
