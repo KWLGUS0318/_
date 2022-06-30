@@ -1,57 +1,53 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-ul,li{
+ul, li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-#wrap{
+#wrap {
   width: 100%;
 }
 
-#header{
-  position:fixed;
+#header {
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   padding: 0 30px;
   box-sizing: border-box;
   border-bottom: 1px solid #e1e1e1;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
-
-#header h1{
+#header > h1 {
   padding: 20px 0;
 }
-
 #header > #gnb {
   width: 1200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-
 #header > #gnb::before {
   content: "";
   width: 100%;
-  position:absolute;
+  position: absolute;
   top: 85px;
   left: 0;
   height: 180px;
   background: #fff;
   border-bottom: 1px solid #e1e1e1;
-  box-shadow: 0px 10px 10px 0px rgba(48,49,51,6%);
+  box-shadow: 0px 10px 10px 0px rgba(48, 49, 51, 0.06);
   display: block;
 }
-
-#header > #gnb::before {
+#header::before {
   display: none;
 }
 
@@ -60,9 +56,9 @@ a{
 }
 
 #header > #gnb > li .snb {
-  position:absolute;
+  position: absolute;
   top: 100px;
-  display:none;
+  display: none;
 }
 
 #header > #gnb.on > li .snb {
@@ -70,5 +66,5 @@ a{
 }
 
 #header > #gnb > li > .snb > ul > li + li {
-  margin-top:20px;
-}
+  margin-top: 20px;
+}/*# sourceMappingURL=search.css.map */
