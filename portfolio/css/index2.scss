@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,19 +11,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   overflow: hidden;
 }
 
 .collect {
   width: 80vw;
   height: 80vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
   transform: perspective(50rem);
-  -webkit-animation: port-text 3s;
-          animation: port-text 3s;
+
+
+  animation: port-text 3s;
+
+
+
+
 }
 
 .about {
@@ -50,42 +56,45 @@
 }
 
 /* 꽃*/
+
 #flower {
   width: 100px;
   height: 100px;
   position: absolute;
+
 }
 
-.group1 {
-  width: 100px;
-  height: 150px;
-  position: absolute;
-  top: 200px;
-  left: -200px;
-  z-index: 3;
-  top: 20px;
-  left: 80px;
+.group1{
+width: 100px;
+height: 150px;
+position: absolute;
+top: 200px; left: -200px;
+z-index: 3;
+  &>a>p{
+    width: 10vw;
+    text-align: center;
+    position: absolute;
+    z-index: 4;
+    transform: rotate(40deg);
+  }
+    top: 20px; left: 80px;
+  &> li {
+    width: 250.76px;
+    height: 50.24px;
+  
+  
+    background: rgba(229, 223, 87, 0.3);
+    opacity: 40%;
+    border-radius: 122px;
+    list-style: none;
+    position: absolute;
+  
+    &:hover {
+      background-color: #fff;
+      opacity: 100%;
+      border: 1px solid rgba(229, 223, 87, 0.3);
+    }
 }
-.group1 > a > p {
-  width: 10vw;
-  text-align: center;
-  position: absolute;
-  z-index: 4;
-  transform: rotate(40deg);
-}
-.group1 > li {
-  width: 250.76px;
-  height: 50.24px;
-  background: rgba(229, 223, 87, 0.3);
-  opacity: 40%;
-  border-radius: 122px;
-  list-style: none;
-  position: absolute;
-}
-.group1 > li:hover {
-  background-color: #fff;
-  opacity: 100%;
-  border: 1px solid rgba(229, 223, 87, 0.3);
 }
 
 .portfolio {
@@ -93,50 +102,70 @@
   height: 60vh;
   border: 1px solid black;
   background-color: #fff;
+
+
   position: absolute;
   transform-style: preserve-3d;
+
   transform: rotateY(90deg);
   transform-origin: 778px;
   z-index: 1;
+
   overflow: hidden;
+
+  
+  &:hover{
+  
+    animation: 10s fade;
+  }
+
 }
-.portfolio:hover {
-  -webkit-animation: 10s fade;
-          animation: 10s fade;
-}
+
 
 .text {
   width: 30vw;
   height: 15%;
   position: relative;
   right: -10vw;
-}
-.text > h1 {
-  margin-top: 3vw;
-  transform: rotateY(-180deg);
-  position: inherit;
-  right: 5vw;
+  &>h1 {
+    margin-top: 3vw;
+    transform: rotateY(-180deg);
+    position: inherit;
+    right: 5vw;
+  }
 }
 
+
 .web-collect {
+
   width: inherit;
   height: 50vh;
   list-style: none;
   overflow: hidden;
+
   background: #DCAD76;
   position: relative;
   z-index: 2;
+
   display: grid;
   align-items: center;
   justify-content: center;
+
+  &>li {
+    width: 30vw;
+    height: 5px;
+    background-color: white;
+  
+  
+    position: relative;
+    z-index: 3;
+  
+  }
 }
-.web-collect > li {
-  width: 30vw;
-  height: 5px;
-  background-color: white;
-  position: relative;
-  z-index: 3;
-}
+
+
+
+
 
 .por-img {
   width: 10vw;
@@ -147,16 +176,15 @@
   visibility: visible;
 }
 
-.enter {
+.enter{
   border: none;
   background-color: #DCAD76;
   position: absolute;
-  left: 20vw;
-  top: 12vw;
+  left: 20vw; top: 12vw;
   transform: rotateY(180deg);
-}
-.enter:hover {
-  color: #fff;
+  &:hover{
+    color: #fff;
+  }
 }
 
 .design {
@@ -168,15 +196,15 @@
   transform: rotateY(-90deg);
   transform-origin: -10px;
   z-index: 1;
+  &>h1 {
+    width: 20vw;
+    height: 5vw;
+    transform: rotateY(180deg);
+    position: relative;
+    top: 20px; right: 90px;
+  }
 }
-.design > h1 {
-  width: 20vw;
-  height: 5vw;
-  transform: rotateY(180deg);
-  position: relative;
-  top: 20px;
-  right: 90px;
-}
+
 
 .door {
   width: 500px;
@@ -203,98 +231,80 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
-.door-front > img {
+.door-front>img{
   width: 50%;
   height: 46vmin;
   position: inherit;
-  top: 4.3vmin;
-  right: 35%;
+  top: 4.3vmin; right: 35%;
 }
-
-.door-back {
+.door-back{
   position: inherit;
-  bottom: -4.3vmin;
-  right: -4px;
+  bottom: -4.3vmin; right: -4px;
   transform: rotateY(180deg);
   cursor: pointer;
-}
-.door-back > a > button {
-  width: 50%;
-  height: 46vmin;
-  border-top-left-radius: 30vw;
-  border-top-right-radius: 30vw;
-  cursor: pointer;
+  &>a>button{
+    width: 50%;
+    height: 46vmin;
+    border-top-left-radius: 30vw;
+    border-top-right-radius: 30vw;
+    cursor: pointer;
+  }
 }
 
-.design-text {
+
+
+
+.design-text{
   visibility: hidden;
 }
 
-.portfolio-text {
+.portfolio-text{
   visibility: hidden;
 }
 
 /* animation*/
-@-webkit-keyframes port-text {
-  0% {
-    transform: none;
-  }
-}
+
+
 @keyframes port-text {
   0% {
     transform: none;
   }
 }
-@-webkit-keyframes fade {
+
+@keyframes fade{
   0% {
     background-color: #fff;
   }
-  60% {
+  60%{
     background-color: #c4c4c4;
     color: #000;
   }
-  60% {
+  60%{
     background-color: #333;
     color: #fff;
   }
-  100% {
+  100%{
     background-color: #000;
     color: #fff;
   }
 }
-@keyframes fade {
-  0% {
-    background-color: #fff;
-  }
-  60% {
-    background-color: #c4c4c4;
-    color: #000;
-  }
-  60% {
-    background-color: #333;
-    color: #fff;
-  }
-  100% {
-    background-color: #000;
-    color: #fff;
-  }
+
+
+@keyframes hidden{
+  0%{} 
+  100%{visibility: hidden;} 
 }
-@-webkit-keyframes hidden {
-  100% {
-    visibility: hidden;
-  }
-}
-@keyframes hidden {
-  100% {
-    visibility: hidden;
-  }
-}
+
+
+
+
+
 /* tablet - version*/
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
   .about {
     width: inherit;
     border: none;
+
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -304,8 +314,7 @@
     width: 100vw;
     height: 90vh;
     position: relative;
-    bottom: 0;
-    left: 0;
+    bottom: 0; left: 0;
   }
 
   .design {
@@ -313,43 +322,41 @@
   }
 
   .portfolio {
-    visibility: hidden;
-  }
+    visibility: hidden;  }
 
   .collect {
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 
-  .design-text {
+  .design-text{
     visibility: visible;
-    position: absolute;
-    top: -20vw;
-    left: 10vw;
+    position: absolute; 
+    top: -20vw; left: 10vw;
     width: 150px;
     height: 81px;
     border: none;
     margin: 4vw 2vw 0vw 0vw;
+    &:active{
+      box-shadow: inset 30px 10px 4px rgba(0, 0, 0, 0.25)
+  
+    }
   }
-  .design-text:active {
-    box-shadow: inset 30px 10px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  .portfolio-text {
+  .portfolio-text{
     visibility: visible;
     position: absolute;
-    top: -20vw;
-    right: 5vw;
+    top: -20vw; right: 5vw;
     width: 150px;
     height: 81px;
     border: none;
     margin: 4vw 0vw 0vw 0vw;
-  }
-  .portfolio-text:active {
-    box-shadow: inset 30px 10px 4px rgba(0, 0, 0, 0.25);
+    &:active{
+    box-shadow: inset 30px 10px 4px rgba(0, 0, 0, 0.25)
+
+    }
   }
 
-  .por-img {
+  .por-img{
     display: none;
   }
-}/*# sourceMappingURL=index2.css.map */
+
+}

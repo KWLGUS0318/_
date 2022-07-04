@@ -5,12 +5,10 @@
 }
 
 #root {
-  width: 100vw;
-  height: 982px;
+  width: 1920px;
+  height: 1080px;
   overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .explain {
@@ -26,6 +24,7 @@
 
 .bg-img {
   width: 60%;
+  height: inherit;
 }
 .bg-img > img {
   width: 100%;
@@ -34,7 +33,7 @@
 .name-tag {
   position: relative;
   top: -170px;
-  left: 160px;
+  left: 170px;
   width: 400px;
   height: 130px;
   border-radius: 40px;
@@ -71,7 +70,8 @@
   border-radius: 60px;
   position: absolute;
   z-index: 2;
-  right: 300px;
+  bottom: 100px;
+  right: 280px;
   color: #fff;
   border: 5px solid #fff;
   background-color: rgba(0, 0, 0, 0);
@@ -101,7 +101,7 @@
 
   .name-tag {
     width: 350px;
-    left: 50px;
+    left: 70px;
   }
   .name-tag > img {
     width: 348px;
@@ -114,7 +114,8 @@
   }
 
   .button {
-    left: 45px;
+    position: absolute;
+    left: 80px;
     bottom: 0px;
   }
   .button:hover {

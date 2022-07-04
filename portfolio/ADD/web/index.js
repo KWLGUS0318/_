@@ -87,3 +87,8 @@ const profile = document.querySelector('.profile')
 profile.style.width = '100%';
 profile.style.height = '50%';
 profile.style.borderBottom = '1px solid #000';
+
+
+const img = document.createElement('img')
+profile.appendChild(img)
+img

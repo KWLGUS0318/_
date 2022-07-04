@@ -1,0 +1,130 @@
+.photo {
+  position: absolute;
+  top: -80px;
+  left: -50px;
+  width: 20vw;
+  border-radius: 6vw;
+}
+
+.photo-hover {
+  position: absolute;
+  width: 10vw;
+  height: 60px;
+  left: 18vw;
+  top: 200px;
+  background: #7DB035;
+  border-radius: 5px;
+  color: #fff;
+  z-index: 2;
+  -webkit-animation: 1s click;
+          animation: 1s click;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  text-align: center;
+  line-height: 0.5;
+}
+.photo-hover:after {
+  border-top: 30px solid #7DB035;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  z-index: 1;
+}
+
+.tree {
+  width: 900px;
+  position: absolute;
+  z-index: 2;
+  bottom: 400px;
+  left: 1200px;
+}
+
+.leaf1, .leaf2, .leaf3 {
+  position: relative;
+  left: 800px;
+  top: 100px;
+  height: 300px;
+  z-index: 3;
+}
+
+.leaf1 {
+  height: 400px;
+}
+
+.leaf2 {
+  top: -320px;
+  left: 1200px;
+}
+
+.leaf3 {
+  height: 350px;
+  top: -400px;
+}
+
+.intro {
+  position: relative;
+  z-index: 4;
+  left: 750px;
+  top: -190px;
+}
+.intro > h3 {
+  position: relative;
+  top: -50px;
+  left: 80px;
+  font-size: 2rem;
+  -webkit-text-decoration: 3px underline;
+          text-decoration: 3px underline;
+}
+.intro > h4 {
+  position: relative;
+  top: -60px;
+}
+.intro > p {
+  position: relative;
+  font-size: 1.2rem;
+  left: 80px;
+  top: -90px;
+}
+
+.intro, .major {
+  color: #fff;
+  text-align: center;
+}
+
+.major {
+  position: relative;
+  bottom: 500px;
+  left: 1150px;
+  z-index: 4;
+}
+
+.license {
+  position: relative;
+  bottom: -60px;
+}
+
+@-webkit-keyframes click {
+  20% {
+    position: absolute;
+    top: 235px;
+  }
+  50% {
+    position: absolute;
+    top: 240px;
+  }
+}
+
+@keyframes click {
+  20% {
+    position: absolute;
+    top: 235px;
+  }
+  50% {
+    position: absolute;
+    top: 240px;
+  }
+}/*# sourceMappingURL=about.css.map */
