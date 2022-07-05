@@ -54,6 +54,8 @@
   width: 100px;
   height: 100px;
   position: absolute;
+  left: 60px;
+  top: 200px;
 }
 
 .group1 {
