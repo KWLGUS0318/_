@@ -7,12 +7,12 @@
 
 #root {
   width: 100vw;
-  height: 300vh;
+  height: 400vh;
   overflow: hidden;
   /*로고 창*/
 }
 #root > header {
-  width: inherit;
+  width: 100%;
   height: 15vh;
   border-bottom: 1px solid #000;
   position: relative;
@@ -22,44 +22,50 @@
 }
 #root > header > img {
   position: absolute;
-  left: 43%;
+  left: 43vw;
   top: 30px;
 }
 
 .profile {
   width: 30px;
   position: absolute;
-  right: 5vw;
-  top: 50px;
+  top: 70px;
+  right: 5.2vw;
 }
 
 .bucket {
   width: 35px;
   position: absolute;
-  right: 15vmin;
-  top: 50px;
+  right: 8vw;
+  top: 70px;
 }
 
 /* 회원가입 말풍선 */
 .sign {
   position: absolute;
-  width: 100px;
-  height: 25px;
-  right: 38px;
-  bottom: 12px;
+  width: 70px;
+  height: 10px;
+  right: 70px;
+  bottom: 13px;
   background-color: #000;
-  color: white;
   border-radius: 5px;
   padding: 12px 12.8px;
   transform: rotate(180deg);
-  -webkit-animation: 1s signup infinite;
-          animation: 1s signup infinite;
+  z-index: 3;
+  border: 1px solid #FFF;
+  -webkit-animation: 1s signup;
+          animation: 1s signup;
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
 }
 .sign > p {
   transform: rotate(180deg);
   position: absolute;
+  text-align: center;
   right: 15px;
-  top: 2px;
+  top: 6px;
+  font-size: 0.3rem;
+  color: white;
 }
 
 .sign:after {
@@ -69,31 +75,25 @@
   border-bottom: 10px solid transparent;
   content: "";
   position: absolute;
-  top: 24px;
+  top: 20px;
   right: 16px;
 }
 
 /*말풍선 애니메이션*/
 @-webkit-keyframes signup {
-  40% {
-    bottom: 12px;
-  }
   60% {
-    bottom: 12px;
+    bottom: 10px;
   }
   90% {
-    bottom: 14px;
+    bottom: 15px;
   }
 }
 @keyframes signup {
-  40% {
-    bottom: 12px;
-  }
   60% {
-    bottom: 12px;
+    bottom: 10px;
   }
   90% {
-    bottom: 14px;
+    bottom: 15px;
   }
 }
 /* 바탕*/
@@ -101,7 +101,7 @@
   position: relative;
   top: 0px;
   display: inline-block;
-  width: inherit;
+  width: 100%;
   height: 7vh;
   background-color: #000;
   z-index: 2;
@@ -167,10 +167,21 @@
   height: inherit;
 }
 .add > p {
+  width: 40%;
   font-size: 3rem;
-  position: relative;
-  top: -255px;
-  left: 8vw;
+  text-align: left;
+  position: absolute;
+  top: 390px;
+  left: 2vw;
+  z-index: 2;
+}
+.add > p > strong {
+  width: 100%;
+  position: absolute;
+  top: -50px;
+  left: 2vw;
+  text-align: left;
+  font-size: 3rem;
 }
 
 .personal-test {
@@ -214,7 +225,6 @@
 section {
   width: 100vw;
   height: 30vw;
-  border: 1px solid black;
   margin-top: 5vw;
 }
 
@@ -226,7 +236,7 @@ section {
   text-align: center;
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
-  padding-top: 3vw;
+  padding-top: 10vw;
 }
 
 .popular {
@@ -253,36 +263,124 @@ section {
   position: relative;
   width: 100%;
   height: 50%;
-  border: 1px solid black;
   display: flex;
 }
 .popular-price > span {
   width: 33.3%;
-  border: 1px solid black;
 }
 .popular-price > span > h2 {
   font-size: 2.5rem;
-  padding: 2vw 4vw 0vw 3vw;
+  padding: 1vw 4vw 0vw 1vw;
 }
 
 .name {
   position: relative;
-  top: 20px;
+  bottom: -150px;
+  left: 20px;
   font-size: 2rem;
 }
 
 .price {
-  width: 10px;
   position: relative;
-  right: 0px;
+  left: 390px;
+  top: -90px;
+  text-decoration: line-through;
+  font-size: 2.5rem;
 }
 
-@media (max-width: 800px) {
+.percent {
+  color: #FF0A0A;
+  font-size: 2.4rem;
+  position: relative;
+  top: -60px;
+  right: -300px;
+}
+
+.sale-price {
+  position: relative;
+  right: -404px;
+  top: -80px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.choice {
+  width: inherit;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-section {
+  display: flex;
+}
+.class-section > div {
+  width: 200px;
+  height: 60px;
+  border-radius: 40px;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 4;
+  border: 1px solid black;
+}
+.class-section > div:hover {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cosmetic {
+  width: 100vw;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+}
+.cosmetic > div {
+  width: 25%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+@media (max-width: 500px) {
   .menubtn {
-    margin: 25px 80px 0px 74px;
+    line-height: 0;
+    position: relative;
+    right: 40px;
+    top: 10px;
   }
 
-  .add > p {
-    font-size: 1.3rem;
+  .bucket {
+    right: 13vw;
   }
+
+  .sign {
+    position: absolute;
+    right: 0;
+  }
+}
+.popular-1 {
+  display: flex;
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  display: flex;
+}
+.popular-1 > a:link {
+  text-decoration: none;
+}
+.popular-1 > a > p {
+  font-size: 1.5rem;
+  position: relative;
+  top: 20px;
+  left: 60px;
+  color: black;
+}
+.popular-1 > a > img {
+  width: 25vw;
+  height: 40vh;
+}
+.popular-1 > a > img:hover {
+  width: 26vw;
 }/*# sourceMappingURL=hera.css.map */
