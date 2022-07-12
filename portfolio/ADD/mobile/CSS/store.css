@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :root {
@@ -14,7 +15,7 @@
 #root {
   width: 500px;
   height: 960px;
-  font-family: "Nanum Pen Script", cursive;
+  font-family: 'Nanum Pen Script', cursive;
   overflow: hidden;
   background-color: var(--color-2);
 }
@@ -22,13 +23,17 @@
 .profile {
   width: inherit;
   height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 40px;
 }
+
 .profile > div > a > img {
   width: 200px;
   margin: 20px 0px 0px 20px;
 }
+
 .profile > div > p {
   position: relative;
   left: 60px;
@@ -40,6 +45,7 @@
 .search {
   margin: 30px 0 0 20px;
 }
+
 .search > input {
   margin-left: 10px;
   border-radius: 30px;
@@ -48,6 +54,7 @@
   width: 400px;
   height: 30px;
 }
+
 .search > a > img {
   position: relative;
   width: 20px;
@@ -57,11 +64,14 @@
 
 .sort {
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   z-index: 2;
   position: relative;
   margin-left: 40px;
 }
+
 .sort > a > button {
   margin-left: 10px;
   border: 1px solid var(--color-3);
@@ -70,8 +80,10 @@
   width: 70px;
   border-radius: 30px;
 }
+
 .sort > a > button:active {
-  box-shadow: inset 30px 10px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 30px 10px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 30px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
 .next {
@@ -79,6 +91,7 @@
   width: 50px;
   height: 50px;
   border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3E04EF), color-stop(29.17%, #F1739F), color-stop(94.65%, #FFCCD1), color-stop(10%, #1E3265));
   background: linear-gradient(180deg, #3E04EF 0%, #F1739F 29.17%, #FFCCD1 94.65%, #1E3265 10%);
   color: #fff;
   border: none;
@@ -103,6 +116,7 @@
   height: 55%;
   margin: 10px 0px 0px 0px;
 }
+
 .food-group > a > img {
   margin-left: 10px;
 }
@@ -110,6 +124,7 @@
 .food-group-2 {
   margin: 10px 0px 0px 10px;
 }
+
 .food-group-2 > a > img {
   margin-right: 30px;
 }
@@ -118,10 +133,15 @@
   width: 400px;
   height: 80%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 2rem;
 }
+
 .food-font > a > p {
   width: 90px;
   margin-right: 7px;
@@ -145,9 +165,12 @@
 }
 
 .food-font-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 2rem;
 }
+
 .food-font-buy > a > p {
   margin: -15px 50px 0px 30px;
 }
@@ -157,6 +180,7 @@
   width: 50px;
   height: 50px;
   border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3E04EF), color-stop(29.17%, #F1739F), color-stop(94.65%, #FFCCD1), color-stop(10%, #1E3265));
   background: linear-gradient(180deg, #3E04EF 0%, #F1739F 29.17%, #FFCCD1 94.65%, #1E3265 10%);
   color: #fff;
   border: none;
@@ -185,13 +209,19 @@
   bottom: -30px;
   left: 0px;
   border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .bottom-bar > img {
   width: 45px;
   margin-left: 40px;
 }
+
 .bottom-bar > img:hover {
   border: 4px dotted var(--color-3);
 }
@@ -201,6 +231,7 @@
   left: 110px;
   bottom: 60px;
 }
+
 .market:hover {
   border: 4px dotted var(--color-3);
 }
@@ -213,6 +244,7 @@
   left: 200px;
   bottom: 70px;
 }
+
 .page > img {
   margin: 5px 10px 0 5px;
 }
@@ -222,6 +254,7 @@
   right: 140px;
   bottom: 60px;
 }
+
 .buck:hover {
   border: 4px dotted var(--color-3);
 }
@@ -231,6 +264,7 @@
   right: 50px;
   bottom: 60px;
 }
+
 .person:hover {
   border: 4px dotted var(--color-3);
 }
@@ -242,10 +276,16 @@
 .recomand-food1 {
   width: 440px;
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10px 0 0 10px;
 }
+
 .recomand-food1 > a > img {
   margin: 0px 10px 0 10px;
-}/*# sourceMappingURL=store.css.map */
+}
+/*# sourceMappingURL=store.css.map */

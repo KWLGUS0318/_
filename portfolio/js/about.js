@@ -5,13 +5,13 @@ document.body.style.margin = 0
 document.body.style.padding = 0
 document.body.style.boxSizing = 'border-box'
 
+
 let color1 = '#DAEE73'
 let hund = 100
 root.style.width = hund+ "vw";
 root.style.height = hund + "vh";
 root.style.overflow = "hidden";
 root.style.border = '1px solid black'
-//root.style.overflow = 'hidden'
 
 const square = document.createElement('div')
 root.appendChild(square)

@@ -3,6 +3,7 @@
   top: -80px;
   left: -50px;
   width: 20vw;
+  height: 0px;
   border-radius: 6vw;
 }
 
@@ -23,6 +24,7 @@
   text-align: center;
   line-height: 0.5;
 }
+
 .photo-hover:after {
   border-top: 30px solid #7DB035;
   border-left: 30px solid transparent;
@@ -36,11 +38,12 @@
 }
 
 .tree {
-  width: 900px;
   position: absolute;
-  z-index: 2;
-  bottom: 400px;
-  left: 1200px;
+  width: 900px;
+  height: 600px;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
 }
 
 .leaf1, .leaf2, .leaf3 {
@@ -71,6 +74,7 @@
   left: 750px;
   top: -190px;
 }
+
 .intro > h3 {
   position: relative;
   top: -50px;
@@ -79,10 +83,12 @@
   -webkit-text-decoration: 3px underline;
           text-decoration: 3px underline;
 }
+
 .intro > h4 {
   position: relative;
   top: -60px;
 }
+
 .intro > p {
   position: relative;
   font-size: 1.2rem;
@@ -90,7 +96,7 @@
   top: -90px;
 }
 
-.intro, .major {
+.intro, .major, .license {
   color: #fff;
   text-align: center;
 }
@@ -98,16 +104,20 @@
 .major {
   position: relative;
   bottom: 500px;
-  left: 1150px;
+  left: 1160px;
   z-index: 4;
 }
 
 .license {
   position: relative;
-  bottom: -60px;
+  bottom: 650px;
+  left: 750px;
+  z-index: 3;
 }
 
 @-webkit-keyframes click {
+  0% {
+  }
   20% {
     position: absolute;
     top: 235px;
@@ -119,6 +129,8 @@
 }
 
 @keyframes click {
+  0% {
+  }
   20% {
     position: absolute;
     top: 235px;
@@ -127,4 +139,5 @@
     position: absolute;
     top: 240px;
   }
-}/*# sourceMappingURL=about.css.map */
+}
+/*# sourceMappingURL=about.css.map */

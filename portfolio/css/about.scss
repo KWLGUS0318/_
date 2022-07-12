@@ -1,7 +1,8 @@
 .photo{
   position: absolute;
   top: -80px; left: -50px;
-  width: 20vw;
+  width: 20vw; height: 0px;
+
   border-radius: 6vw;
 }
 
@@ -34,10 +35,10 @@ left: 50px;z-index: 1;
 }
 
 .tree{
-  width: 900px;
   position: absolute;
-  z-index: 2;
-  bottom: 400px; left: 1200px;
+  width: 900px; height: 600px;
+  z-index: 1;
+  right: 0; bottom: 0;
 }
 
 .leaf1,.leaf2,.leaf3{
@@ -83,19 +84,20 @@ left: 50px;z-index: 1;
   }
 }
 
-.intro,.major{
+.intro,.major,.license{
   color: #fff;
   text-align: center;
 }
 .major{
   position: relative;
-  bottom: 500px; left: 1150px;
+  bottom: 500px; left: 1160px;
   z-index: 4;
 }
 
 .license{
   position: relative;
-  bottom: -60px;
+  bottom: 650px; left: 750px;
+  z-index: 3;
 }
 @keyframes click{
 0%{ }
