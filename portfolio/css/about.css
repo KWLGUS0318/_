@@ -24,7 +24,6 @@
   text-align: center;
   line-height: 0.5;
 }
-
 .photo-hover:after {
   border-top: 30px solid #7DB035;
   border-left: 30px solid transparent;
@@ -74,7 +73,6 @@
   left: 750px;
   top: -190px;
 }
-
 .intro > h3 {
   position: relative;
   top: -50px;
@@ -83,12 +81,10 @@
   -webkit-text-decoration: 3px underline;
           text-decoration: 3px underline;
 }
-
 .intro > h4 {
   position: relative;
   top: -60px;
 }
-
 .intro > p {
   position: relative;
   font-size: 1.2rem;
@@ -116,8 +112,6 @@
 }
 
 @-webkit-keyframes click {
-  0% {
-  }
   20% {
     position: absolute;
     top: 235px;
@@ -129,8 +123,6 @@
 }
 
 @keyframes click {
-  0% {
-  }
   20% {
     position: absolute;
     top: 235px;
@@ -139,5 +131,4 @@
     position: absolute;
     top: 240px;
   }
-}
-/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */

@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media (max-width: 700px) {
@@ -10,7 +9,7 @@
     width: 474px;
     height: 1000px;
     background-color: #C4DAF6;
-    font-family: 'Nanum Pen Script', cursive;
+    font-family: "Nanum Pen Script", cursive;
     overflow: hidden;
   }
   .bottom {
@@ -46,15 +45,9 @@
     top: 31px;
     background: #C4DAF6;
     border-radius: 28px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .d-day > p {
     font-size: 1.3rem;
@@ -74,7 +67,6 @@
     height: 100px;
     right: 90px;
     top: 100px;
-    display: -ms-grid;
     display: grid;
     font-size: 1.3rem;
   }
@@ -84,15 +76,9 @@
     position: absolute;
     bottom: 10px;
     right: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .choice > a > button {
     width: 81px;
@@ -113,8 +99,6 @@
     top: 280px;
     background-color: #fff;
     border-radius: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .tip-img {
@@ -145,8 +129,6 @@
     top: 302px;
     background-color: #fff;
     border-radius: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .chanllenge-img {
@@ -174,8 +156,6 @@
   }
   .people {
     margin-top: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .people > p {
@@ -201,19 +181,12 @@
     position: absolute;
     bottom: -630px;
     border-radius: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .bottom-bar > a > img {
     width: 40px;
     margin-right: 40px;
   }
-}
-/*# sourceMappingURL=mypage.css.map */
+}/*# sourceMappingURL=mypage.css.map */
