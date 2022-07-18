@@ -10,26 +10,25 @@
 }
 
 #root {
-  width: 100vw;
-  height: 400vh;
+  width: 1512px;
+  height: 4000px;
   overflow: hidden;
 
   /*로고 창*/
   &>header {
-    width: 100%;
-    height: 15vh;
+    width: 1512px;
+    height: 150px;
     border-bottom: 1px solid #000;
     position: relative;
     background-color: #fff;
     z-index: 2;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     /*로고 이미지*/
 
-    &>img {
-      position: absolute;
-      left: 43vw;
-      top: 30px;
-    }
   }
 
 }
@@ -37,13 +36,13 @@
 .profile {
   width: 30px;
   position: absolute;
-  top: 70px; right: 5.2vw;
+  top: 70px; right: 40px;
 }
 
 .bucket {
   width: 35px;
   position: absolute;
-  right: 10vw;
+  right: 100px;
   top: 70px;
 }
 
@@ -54,7 +53,7 @@
   position: absolute;
   width: 70px;
   height: 10px;
-  right: 70px;
+  right: 15px;
   bottom: 13px;
   background-color: #000;
 
