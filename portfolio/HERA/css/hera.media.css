@@ -1,0 +1,47 @@
+@media (max-width: 500px) {
+  .menubtn {
+    line-height: 0;
+    position: relative;
+    right: 40px;
+    top: 10px;
+  }
+  .bucket {
+    right: 13vw;
+  }
+  .sign {
+    position: absolute;
+    right: 0;
+  }
+}
+.new-product {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  display: flex;
+}
+.new-product > a:link {
+  text-decoration: none;
+}
+.new-product > a > p {
+  font-size: 1.5rem;
+  position: relative;
+  top: 20px;
+  left: 60px;
+  color: black;
+}
+.new-product > a > img {
+  width: 25vw;
+  height: 40vh;
+}
+.new-product > a > img:hover {
+  width: 26vw;
+}
+
+.add > p {
+  font-size: 0.8rem;
+  padding-left: 2vw;
+}
+.add > p > strong {
+  font-size: 1rem;
+}/*# sourceMappingURL=hera.media.css.map */

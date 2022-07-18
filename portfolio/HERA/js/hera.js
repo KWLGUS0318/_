@@ -12,3 +12,6 @@ personbtn.addEventListener('click', function(){
 );
 
 
+const section = document.querySelector('.class-section').children
+console.log(section)
+
